@@ -239,7 +239,7 @@ public final class ModuleLoader {
       }
     },
 
-    @GwtIncompatible // Paths.get, Path.toRealPath
+    @GwtIncompatible("Paths.get, Path.toRealPath")
     FOLLOW_SYMLINKS {
       @Override
       public String apply(String path) {
